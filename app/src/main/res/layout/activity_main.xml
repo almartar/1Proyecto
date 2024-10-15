@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#622196F3"
+    tools:context=".MainActivity">
+
+<androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline_horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.33"
+    />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        />
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/sopa"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight="0.33"
+        app:layout_constraintBottom_toTopOf="@id/guideline_horizontal"
+        />
+    <TextView
+        android:id="@+id/autor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ALBERTO"
+        app:layout_constraintBottom_toTopOf="@id/guideline_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SOPA DE:"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
+        android:textColor="#E91E1E"
+        app:layout_constraintBottom_toTopOf="@id/autor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+
+        />
+    <TextView
+        android:id="@+id/titlo_descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripcion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@id/guideline_horizontal"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:id="@+id/descripcion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Es una sopa de pescado y zumos combinados con algunas especies picantes listo para dietas de régimen"
+
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@id/titlo_descripcion"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/tit_ingredientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Ingredientes"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+        app:layout_constraintHorizontal_bias="0.50"
+
+        app:layout_constraintTop_toBottomOf="@id/guideline_horizontal" />
+
+    <TextView
+        android:id="@+id/Ingredientes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginEnd="16dp"
+        android:text="Es una sopa de pescado\n y zumos combinados con algunas especies\n picantes listo para dietas de régimen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@id/tit_ingredientes" />
+
+    <TextView
+        android:id="@+id/titReceta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Receta"
+        app:layout_constraintTop_toBottomOf="@+id/Ingredientes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/Receta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="sdfkjhdjkfhsdjkghjkdfghjkghjkdfghjkdfghjkdfghjkdghjkfjkghjkdfghjkdfghjkghfjghjghfdjkghdkfjghjkfghdjkfghjkdfghdkjghdjkfghdjkfghdjkfghdfjkghdfjkghdjkfghdfjkhjghdfjkghfjkghdfjkghjkfdhgdfjk"
+        app:layout_constraintTop_toBottomOf="@+id/titReceta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+
+
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
